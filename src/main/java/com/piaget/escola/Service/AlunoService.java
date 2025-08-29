@@ -1,10 +1,13 @@
 package com.piaget.escola.Service;
 
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
 import com.piaget.escola.Interface.AlunoRepository;
 import com.piaget.escola.Models.Aluno;
 
-import java.util.List;
-
+@Service
 public class AlunoService {
     private final AlunoRepository repository;
 
@@ -12,7 +15,7 @@ public class AlunoService {
         this.repository = repository;
     }
 
-    public List<Aluno> bucarAluno(){
+    public List<Aluno> buscarAluno(){
         return repository.findAll();
     }
 
