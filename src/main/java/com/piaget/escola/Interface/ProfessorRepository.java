@@ -1,7 +1,8 @@
 package com.piaget.escola.Interface;
 
-import com.piaget.escola.Models.Aluno;
+
+import com.piaget.escola.Models.Professor;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AlunoRepository extends JpaRepository<Aluno, Long> {
+public interface ProfessorRepository extends JpaRepository<Professor, Long> {
 }

@@ -1,10 +1,94 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de dados Piaget</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Navbar compacta */
+
+          .navbar {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        }
+        .navbar-brand img {
+          max-height: 40px;
+        }
+    </style>
+
 </head>
 <body>
-$END$
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger py-2">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="./index.html">
+            <img src="https://qb-assets.querobolsa.com.br/logos/colorido/large/542/logo_1489435856.png" alt="Logo Senai">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./professor.html">Professor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aluno.html">Aluno</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Carrossel -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://picsum.photos/id/1011/1200/400" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://picsum.photos/id/1015/1200/400" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://picsum.photos/id/1016/1200/400" class="d-block w-100" alt="Imagem 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>
+
+
+
+<!-- Conteúdo -->
+<div class="container text-center mt-5">
+    <h1>Bem-vindo ao Sistema Senai Java</h1>
+    <p class="lead">Gerenciamento de Professores e Alunos</p>
+</div>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

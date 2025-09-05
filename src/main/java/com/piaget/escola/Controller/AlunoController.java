@@ -2,17 +2,13 @@ package com.piaget.escola.Controller;
 
 import java.util.List;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.piaget.escola.Models.Aluno;
 import com.piaget.escola.Service.AlunoService;
 
 @RestController
-@RequestMapping("/aluno")
+@RequestMapping("/alunos")
 public class AlunoController {
 
     private final AlunoService service;
@@ -31,6 +27,11 @@ public class AlunoController {
     return  service.salvarNovoAluno(aluno);
     }
 
+
+    @DeleteMapping("/{id}")
+    public void excluirAluno(@PathVariable Long id){
+        service.deletarAluno(id);
+    }
 
 
 

@@ -1,17 +1,16 @@
 package com.piaget.escola.Service;
 
-import java.util.List;
-
-import org.springframework.stereotype.Service;
-
 import com.piaget.escola.Interface.AlunoRepository;
 import com.piaget.escola.Models.Aluno;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
-public class AlunoService {
+public class ProfessorService {
     private final AlunoRepository repository;
 
-    public AlunoService(AlunoRepository repository) {
+    public ProfessorService(AlunoRepository repository) {
         this.repository = repository;
     }
 
